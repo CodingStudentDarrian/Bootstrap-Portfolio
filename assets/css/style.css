@@ -243,3 +243,41 @@ h1 {
     width: 150px;
     text-align: center;
 }
+
+#container {
+    width: 980px;
+    margin: 0px auto;
+}
+
+@media screen and (max-width:979px) {
+    #container {
+        width: 100%;
+        margin: 0px;
+    }
+    img {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #container {
+        width: 100%;
+        margin: 0px;
+    }
+    img {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:639) {
+    #container {
+        width: 100%;
+        margin: 0px;
+    }
+    img {
+        width: 100%;
+        margin: 0px;
+    }
+}
