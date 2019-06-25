@@ -15,28 +15,6 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-
-/*-----------------re-usable-------------------
-    Size{
-        
-    margin: 0 auto;
-    width: 960px;
-    }
-
-
-clearfix::after {
-    content: " ";
-    display: block;
-    clear: both;
-
-}
-
- <!--
-<img src="https://via.placeholder.com/150">  -->
-
-
-------------------------------------------------------*/
-
 body {
     margin: 0;
     padding: 0;
@@ -44,9 +22,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
 }
-
-
-/*---------------------------flexbox element from W3----------------------------*/
 
 header {
     background: #fff;
@@ -252,32 +227,32 @@ h1 {
 @media screen and (max-width:979px) {
     #container {
         width: 100%;
-        margin: 0px;
+        margin: auto;
     }
     img {
         width: 100%;
-        margin: 0px;
+        margin: auto;
     }
 }
 
 @media screen and (max-width:767px) {
     #container {
         width: 100%;
-        margin: 0px;
+        margin: auto;
     }
     img {
         width: 100%;
-        margin: 0px;
+        margin: auto;
     }
 }
 
 @media screen and (max-width:639) {
     #container {
         width: 100%;
-        margin: 0px;
+        margin: auto;
     }
     img {
         width: 100%;
-        margin: 0px;
+        margin: auto;
     }
 }
