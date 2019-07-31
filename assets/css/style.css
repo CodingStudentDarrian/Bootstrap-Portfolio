@@ -47,48 +47,196 @@ footer {
 =                       Header starts                     
 -----------------------------------------------------------------------------------------------------------------------*/
 
-header {
-    margin-top: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main_navig {
-    margin: 0 auto;
-    width: 960px;
+html {
+    font-size: 16px;
+    font-family: cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
-h1 {
-    font-family: cursive;
-    float: left;
-    background-color: #4aaaa5;
-    color: #fff;
-    padding: 30px;
-}
-
-.nav_options {
-    float: right;
-    margin-top: 10px;
-}
-
-.nav_options li {
-    display: inline-block;
-    margin: 10px;
-}
-
-.nav_options li a:link,
-.nav_options li a:visited {
+a {
     text-decoration: none;
-    border-bottom: solid;
-    border-bottom-color: transparent;
-    color: #777777;
-    letter-spacing: 1.5px;
-    font-family: cursive;
+    color: #eee;
+    font-size: 20.3px;
 }
 
-.nav_options li a:active,
-.nav_options li a:hover {
-    color: #4aaaa5;
-    font-size: 18px;
-    border-bottom: solid;
+header {
+    width: 100%;
+    height: 55cv;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("https://cdn.dribbble.com/users/822246/screenshots/3165821/coding_line_art_concept-01.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    color: #eeeeee;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+nav {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.brand {
+    font-size: 30px;
+    font-weight: 300;
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+}
+
+.brand span {
+    color: gold;
+}
+
+nav ul {
+    display: flex;
+    font-size: 13.5px;
+}
+
+nav ul li {
+    list-style: none;
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+    font-size: 13.5px;
+}
+
+nav ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+nav ul li:nth-child(2) {
+    animation-delay: .5s;
+}
+
+nav ul li:nth-child(3) {
+    animation-delay: 1s;
+}
+
+nav ul li:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+nav ul li a {
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+nav ul li a:last-child {
+    margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: crimson;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+nav ul li a::before {
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after {
+    bottom: 0;
+    transform-origin: right;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .95);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: opacity 650ms;
+    transform: scale(0);
+    opacity: 0;
+    display: none;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+@keyframes slideIn {
+    from {}
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav {
+        padding-top: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-top: 5rem;
+    }
+    nav ul li a {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    .brand {
+        font-size: 5rem;
+    }
+    .overlay.menu-open,
+    nav.menu-open {
+        display: flex;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: white;
 }
 
 
@@ -99,23 +247,24 @@ h1 {
 .first-sec {
     border-top-style: solid;
     border-top-color: #dddddd;
-    background-color: #f3ffe9;
+    background-color: transparent;
 }
 
 .sec-border {
-    background-color: #fff;
+    background-color: transparent;
     margin: 0 auto;
     width: 960px;
     border: solid;
-    border-color: #cccccc;
+    border-color: black;
     margin-top: 25px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("https://cdn.dribbble.com/users/822246/screenshots/3165821/coding_line_art_concept-01.jpg") center no-repeat;
 }
 
 .part-one {
-    font-size: 22px;
+    font-size: 30px;
     font-family: cursive;
-    color: #4aaaa5;
-    border-bottom: solid #dddddd;
+    color: gold;
+    border-bottom: transparent;
     padding: 20px;
 }
 
@@ -147,11 +296,11 @@ h1 {
 
 .btn {
     display: inline-block;
-    background-color: #4aaaa5;
-    color: #fff;
-    padding: 8px 20px;
-    text-decoration: none;
-    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+    padding: none;
+    text-decoration: black;
+    border-radius: none;
 }
 
 
@@ -164,26 +313,27 @@ h1 {
 
 .flex-container-two {
     display: flex;
-    background-color: #fff;
+    background-color: transparent;
     justify-content: center;
 }
 
 .flex-container-two>div {
-    background-color: #fff;
+    background-color: transparent;
     margin: 0 30px;
-    font-size: 20px;
-    color: #fff;
+    font-size: 35px;
+    color: gold;
 }
 
 .thir-piclink {
     position: relative;
     text-align: center;
-    color: white;
+    color: gold;
 }
 
 .port-link {
     text-decoration: none;
-    color: #fff;
+    color: gold;
+    font-size: 25px
 }
 
 .imgtitlink {
@@ -195,19 +345,21 @@ h1 {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #4aaaa5;
+    background-color: black;
     width: 150px;
     padding: 3px 0;
+    font-family: cursive;
+    font-size: 18px;
 }
 
 .flex-container {
     display: flex;
-    background-color: #fff;
+    background-color: transparent;
     justify-content: center;
 }
 
 .flex-container>div {
-    background-color: #4aaaa5;
+    background-color: black;
     margin: 40px 30px;
     padding: 10px 30px;
     font-size: 20px;
