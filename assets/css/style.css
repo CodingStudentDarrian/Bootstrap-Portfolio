@@ -1,4 +1,6 @@
-.collapse {}
+.collapse {
+    padding: 0;
+}
 
 .veiw {
     max-width: 100px;
@@ -9,4 +11,18 @@
     background-color: aqua;
 }
 
-.container-fluid {}
+.container-fluid {
+    padding: 0;
+}
+
+#myid {
+    height: 104px;
+    width: 140px;
+}
+
+#myid img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
