@@ -1,0 +1,12 @@
+.collapse {}
+
+.veiw {
+    max-width: 100px;
+    height: auto;
+}
+
+.dropdown-menu {
+    background-color: aqua;
+}
+
+.container-fluid {}
