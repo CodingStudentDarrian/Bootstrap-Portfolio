@@ -1,28 +1,41 @@
-.collapse {
-    padding: 0;
-}
-
-.veiw {
-    max-width: 100px;
-    height: auto;
-}
-
-.dropdown-menu {
-    background-color: aqua;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-#myid {
-    height: 104px;
-    width: 140px;
-}
-
-#myid img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    display: block;
-}
+                                .collapse {
+                                    padding: 0;
+                                }
+                                
+                                .veiw {
+                                    max-width: 100px;
+                                    height: 10px;
+                                }
+                                
+                                .container-fluid {
+                                    padding: 0;
+                                }
+                                
+                                #zero {
+                                    max-width: 59.3%;
+                                    max-height: 100%;
+                                    margin: auto;
+                                    display: block;
+                                    border-radius: 50%;
+                                }
+                                
+                                .container-fluid {
+                                    background-image: url(/images/);
+                                }
+                                
+                                #one {
+                                    max-width: 59.3%;
+                                    max-height: 10%;
+                                    margin: auto;
+                                    display: block;
+                                    border: 1px solid #ddd;
+                                    padding: 10px;
+                                }
+                                
+                                .about-info {
+                                    font-size: 20px;
+                                }
+                                
+                                #summary {
+                                    float: right;
+                                }
